@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <textarea class="text-area" placeholder="console.log(...)"  ></textarea>
+
+    <div class="container">
+        <div class="keyboard">
+            <div class="keyboard_row" id="row_1">
+                <button class="key keyboard_key" data-key="27">Esc</button>
+                <button class="key keyboard_key" data-key="112">F1</button>
+                <button class="key keyboard_key" data-key="113">F2</button>
+                <button class="key keyboard_key" data-key="114">F3</button>
+                <button class="key keyboard_key" data-key="115">F4</button>
+                <button class="key keyboard_key" data-key="116">F5</button>
+                <button class="key keyboard_key" data-key="117">F6</button>
+                <button class="key keyboard_key" data-key="118">F7</button>
+                <button class="key keyboard_key" data-key="119">F8</button>
+                <button class="key keyboard_key" data-key="120">F9</button>
+                <button class="key keyboard_key" data-key="121">F10</button>
+                <button class="key keyboard_key" data-key="122">F11</button>
+                <button class="key keyboard_key" data-key="123">F12</button>
+                <button class="key keyboard_key" data-key="46">Del</button>
+            </div>
+
+            <div class="keyboard_row" id="row_2">
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="192">~</button>
+                    <button class="key key_double" data-key="192">`</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="49">!</button>
+                    <button class="key key_double" data-key="49">1</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="50">@</button>
+                    <button class="key key_double" data-key="50">2</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="51">#</button>
+                    <button class="key key_double" data-key="51">3</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="52">$</button>
+                    <button class="key key_double" data-key="52">4</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="53">%</button>
+                    <button class="key key_double" data-key="53">5</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="54">^</button>
+                    <button class="key key_double" data-key="54">6</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="55">&</button>
+                    <button class="key key_double" data-key="55">7</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="56">*</button>
+                    <button class="key key_double" data-key="56">8</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="57">(</button>
+                    <button class="key key_double" data-key="57">9</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="48">)</button>
+                    <button class="key key_double" data-key="48">0</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="189">_</button>
+                    <button class="key key_double" data-key="189">-</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="187">+</button>
+                    <button class="key key_double" data-key="187">=</button>
+                </div>
+                <button class="key keyboard_key" id="backspace" data-key="8">Backspace</button>
+            </div>
+
+            <div class="keyboard_row" id="row_3">
+                <button class="key keyboard_key" id="tab" data-key="9">Tab</button>
+                <button class="key keyboard_key" data-key="81">Q</button>
+                <button class="key keyboard_key" data-key="87">W</button>
+                <button class="key keyboard_key" data-key="69">E</button>
+                <button class="key keyboard_key" data-key="82">R</button>
+                <button class="key keyboard_key" data-key="84">T</button>
+                <button class="key keyboard_key" data-key="89">Y</button>
+                <button class="key keyboard_key" data-key="85">U</button>
+                <button class="key keyboard_key" data-key="73">I</button>
+                <button class="key keyboard_key" data-key="79">O</button>
+                <button class="key keyboard_key" data-key="80">P</button>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="219">{</button>
+                    <button class="key key_double" data-key="219">[</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="221">}</button>
+                    <button class="key key_double" data-key="221">]</button>
+                </div>
+                <div class="key_double_container keyboard_key" id="backslash">
+                    <button class="key key_double" data-key="220">|</button>
+                    <button class="key key_double" data-key="220">\</button>
+                </div>
+            </div>
+
+            <div class="keyboard_row" id="row_4">
+                <button class="key keyboard_key" id="caps" data-key="20">Caps</button>
+                <button class="key keyboard_key" data-key="65">A</button>
+                <button class="key keyboard_key" data-key="83">S</button>
+                <button class="key keyboard_key" data-key="68">D</button>
+                <button class="key keyboard_key" data-key="70">F</button>
+                <button class="key keyboard_key" data-key="71">G</button>
+                <button class="key keyboard_key" data-key="72">H</button>
+                <button class="key keyboard_key" data-key="74">J</button>
+                <button class="key keyboard_key" data-key="75">K</button>
+                <button class="key keyboard_key" data-key="76">L</button>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="186">:</button>
+                    <button class="key key_double" data-key="186">;</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="222">"</button>
+                    <button class="key key_double" data-key="222">'</button>
+                </div>
+                <button class="key keyboard_key" id="enter" data-key="13">Enter</button>
+            </div>
+
+            <div class="keyboard_row" id="row_5">
+                <button class="key keyboard_key" data-key="16" id="shift-l">Shift</button>
+                <button class="key keyboard_key" data-key="90">Z</button>
+                <button class="key keyboard_key" data-key="88">X</button>
+                <button class="key keyboard_key" data-key="67">C</button>
+                <button class="key keyboard_key" data-key="86">V</button>
+                <button class="key keyboard_key" data-key="66">B</button>
+                <button class="key keyboard_key" data-key="78">N</button>
+                <button class="key keyboard_key" data-key="77">M</button>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="188"><</button>
+                    <button class="key key_double" data-key="188">,</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="190">></button>
+                    <button class="key key_double" data-key="190">.</button>
+                </div>
+                <div class="key_double_container keyboard_key">
+                    <button class="key key_double" data-key="191">?</button>
+                    <button class="key key_double" data-key="191">/</button>
+                </div>
+                <button class="key keyboard_key" id="shift-r" data-key="16">Shift</button>
+            </div>
+
+
+            <div class="keyboard_row" id="row_6">
+                <button class="key keyboard_key" data-key="17" id="ctrl-l">Ctrl</button>
+                <button class="key keyboard_key" data-key="18">Fn</button>
+                <button class="key keyboard_key" data-key="91">Win</button>
+                <button class="key keyboard_key" data-key="18" id="alt-l">Alt</button>
+                <button class="key keyboard_key" data-key="32" id="space">Space</button>
+                <button class="key keyboard_key" data-key="18" id="alt-r">Alt</button>
+                <button class="key keyboard_key" data-key="17" id="ctrl-r">Ctrl</button>
+
+                <button class="key keyboard_key" data-key="37">&#8592;</button>
+                <div class="arrows">
+                    <button class="key keyboard_key arrow" data-key="38">&#8593;</button>
+                    <button class="key keyboard_key arrow" data-key="40">&#8595;</button>
+                </div>
+                <button class="key keyboard_key" data-key="39">&#8594;</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
